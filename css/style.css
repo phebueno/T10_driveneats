@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/**CABEÇÁRIO**/
+header{
+    height: 92px;
+    width: 100%;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/**CORPO**/
+body{
+    background-color: #E5E5E5;
+}
+
+main{
+    margin: 122px 0;
+    width:100%;
+    
+}
+/**Ajustar margens do corpo (main) e seções de acordo**/
+section{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h3{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+
+.item-box{
+    display:flex;
+    flex-direction: row;
+    width:100%;       
+    gap: 16px;    
+    overflow-x: auto;
+}
+.item-box::-webkit-scrollbar {
+    display: none;
+  }
+
+ /**CONFIG DE ITENS**/ 
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 172px;
+    min-width:172px; /**A imagem precisa de uma width mínima para não ser distorcida, e criar o scroll com flexbox**/
+    height: 216px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-top: 17px; 
+    padding: 18px 14px;
+    
+}
+
+.item .comida-nome{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.item .comida-descr{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.item .comida-prec{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+footer{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 92px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position:fixed;
+    bottom:0px;
+}
+
+footer button{
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    border-radius: 50px;
+    color: #FFFFFF;
+    border: none;
+    padding: 0 80px;
+}
+
+
+
