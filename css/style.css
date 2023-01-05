@@ -65,10 +65,6 @@ h3{
     gap: 16px;    
     overflow-x: auto;
 }
-.item-box::-webkit-scrollbar {
-    display: none;
-  }
-
  /**CONFIG DE ITENS**/ 
 .item{
     display: flex;
@@ -140,5 +136,9 @@ footer button{
     padding: 0 80px;
 }
 
-
-
+/**Esconde o scroll apenas se for aparelho mobile/touch**/
+@media only screen and (hover: none) and (pointer: coarse){
+.item-box::-webkit-scrollbar {
+    display: none;
+  }
+}
