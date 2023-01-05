@@ -20,3 +20,22 @@ function habilitarBotao()
     botao.innerHTML="Fechar pedido";
     botao.removeAttribute('disabled');
 }
+
+function pedir(){
+    const comida = document.querySelectorAll('.selecionado p.comida-nome');
+    const preco = document.querySelectorAll('.selecionado p.comida-prec');
+    var preco_total = 0;
+    let valor = "";
+    for ( i=0; i<preco.length; i++){
+        valor = preco[i].innerHTML.replace(",",".");        
+        valor = parseFloat(valor.substring(3, valor.length));
+        preco_total = valor + preco_total;
+    }
+    pedido_url_text=`Olá, gostaria de fazer o pedido: %0a- Prato: ${comida[0].innerHTML}%0a- Bebida: ${comida[1].innerHTML}%0a- Sobremesa: ${comida[2].innerHTML}%0aTotal: R$ ${preco_total.toFixed(2)}`;
+
+    console.log(pedido_url_text);
+    console.log(encodeURIComponent(pedido_url_text));
+   
+    window.open(`https://wa.me/5513996686260?text=${pedido_url_text}`, '_blank').focus();
+    
+}
