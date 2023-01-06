@@ -73,14 +73,14 @@
                 </div>    
                 <div id="bebida3" class="item" onclick="selecionar('bebida3')">
                     <img src="imgs/coca-cola.png" alt="">
-                    <p class="comida-nome">Coca quente</p>
+                    <p class="comida-nome">Coca morna</p>
                     <p class="comida-descr">Hmmmmmmmm</p>
                     <p class="comida-prec">R$ 5,00</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>    
                 <div id="bebida4" class="item" onclick="selecionar('bebida4')">
                     <img src="imgs/coca-cola.png" alt="">
-                    <p class="comida-nome">Coca morna</p>
+                    <p class="comida-nome">Coca quente</p>
                     <p class="comida-descr">Hmmmmmmmm</p>
                     <p class="comida-prec">R$ 4,50</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
@@ -136,8 +136,22 @@
         </section>       
     </main>
     <footer>
-        <button onclick="pedir();" disabled>Selecione os 3 itens para fechar o pedido</button>
+        <button onclick="construirRevisao();" disabled>Selecione os 3 itens para fechar o pedido</button>
     </footer>
+    <div class="fundo escondido">
+        <div class="tela-revisao">
+            <p class="revisao-titulo titulo">Confirme seu pedido</p>
+            <div class="revisao-conteudo">
+                <div><p class="revisao-prato">Teste</p><p class="prato-preco">Teste</p></div>
+                <div><p class="revisao-bebida">Teste</p><p class="bebida-preco">Teste</p></div>
+                <div><p class="revisao-sobremesa">Teste</p><p class="sobremesa-preco">Teste</p></div>
+                <div class="titulo"><p class="revisao-vtotal">TOTAL</p><p class="vtotal-preco titulo">R$: 00,00</p></div>
+            </div>
+            <button class="botao-revisao" onclick="pedir()">Tudo certo, pode pedir!</button>
+            <p class="cancelar">Cancelar</p>            
+        </div>
+    </div>
+    
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -165,6 +165,94 @@ footer button{
     background-color: #32B72F;
 }
 
+/**TELA DE REVISÃO**/
+
+.fundo{
+    display:flex;
+    align-items: center; /**alinha quadrinho verde de revisão**/
+    width:100vw;
+    height:100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+
+.tela-revisao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width:377px;
+    height:353px;
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 0 25px;
+}
+.revisao-conteudo{
+    width:100%; /**garante que o space-between afastará tudo**/
+    
+}
+.revisao-conteudo div{
+    display: flex;
+    justify-content:space-between;
+    height:40px; /**um espaçamento maior para a área de texto**/
+}
+
+.revisao-conteudo p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: white;
+}
+/**Enfase em fonte e alinhamento:**/
+.titulo, .revisao-conteudo div.titulo p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-revisao{
+    width: 329px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #50D074;
+    border:none;
+}
+
+.cancelar{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.escondido{
+    display:none;
+}
+
 /**Esconde o scroll apenas se for aparelho mobile/touch**/
 @media only screen and (hover: none) and (pointer: coarse){
 .item-box::-webkit-scrollbar {
